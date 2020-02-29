@@ -1,5 +1,6 @@
 const express = require('express');
 const FoldersService = require('./folders-service');
+const logger = require('../logger');
 
 const FoldersRouter = express.Router();
 const bodyParser = express.json();

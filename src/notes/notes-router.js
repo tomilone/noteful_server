@@ -1,6 +1,6 @@
 const express = require('express');
 const NotesService = require('./notes-service');
-
+const logger = require('../logger');
 const NotesRouter = express.Router();
 const bodyParser = express.json();
 
