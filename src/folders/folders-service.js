@@ -1,6 +1,6 @@
 const FoldersService = {
   getAllFolders(knex) {
-    return knex.Selection("*").from("folders")
+    return knex.select("*").from("folders")
   },
   getById(knex, id) {
     return knex

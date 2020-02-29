@@ -1,6 +1,6 @@
 const NotesService = {
     getAllNotes(knex) {
-      return knex.Selection("*").from("notes")
+      return knex.select("*").from("notes")
     },
     getById(knex, id) {
       return knex

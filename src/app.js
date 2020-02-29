@@ -17,8 +17,8 @@ app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
 
-app.use('/folders', FoldersRouter)
-app.use('/notes', NotesRouter)
+app.use('/api', FoldersRouter)
+app.use('/api', NotesRouter)
 
 app.get('/', (req, res) => {
     res.send('Hello, world!')
