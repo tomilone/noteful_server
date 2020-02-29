@@ -23,7 +23,7 @@ NotesRouter
         .catch(next)
     })
     .post(bodyParser, (req,res,next) => {
-        for(const field of ['name', 'content']){
+        for(const field of ['name', 'content', 'folder_id']){
             if(!req.body[field]){
                 logger.error(`${field} is required`)
                 return res.status(400).send({
@@ -31,8 +31,8 @@ NotesRouter
                 })
             }
         }
-        const { name, content } = req.body
-        const newNote = { name, content }
+        const { name, content, folder_id } = req.body
+        const newNote = { name, content, folder_id }
 
         NotesService.insertNotes(
             req.app.get('db'),

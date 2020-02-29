@@ -1,3 +1,7 @@
 {"message":"name is required","level":"error"}
 {"message":"Folder with id 4 has been created!","level":"info"}
 {"message":" Folder with id 4 has been deleted!","level":"info"}
+{"message":"name is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"folder_id is required","level":"error"}
+{"message":"note with id 25 has been created!","level":"info"}
