@@ -1,5 +1,6 @@
 module.exports = {
-    PORT: process.env.PORT || 8000,
-    NODE_ENV: process.env.NODE_ENV || 'development',
-    DB_URL: process.env.DB_URL || 'postgresql://postgres@localhost/noteful_server'
-  }
+  PORT: process.env.PORT || 8000,
+  NODE_ENV: process.env.NODE_ENV || 'development',
+  DATABASE_URL: process.env.DATABASE_URL || 'postgresql://postgres@localhost/noteful_server',
+  TEST_DATABASE_URL: process.env.TEST_DATABASE_URL || 'postgresql://postgres@localhost/noteful_server-test'
+}
